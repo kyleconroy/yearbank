@@ -691,7 +691,7 @@ header img {
 
 div.album {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   column-gap: 15px;
   row-gap: 10px;
 }
