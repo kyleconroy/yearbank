@@ -241,6 +241,9 @@ func run() error {
 const homepage = `<!DOCTYPE html>
 <html lang="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>STHS Yearbook 2006-07</title>
+  <meta property="og:title" content="STHS Yearbook 2006-07" />
+  <meta property="og:image" content="https://sths.photos/images/home.jpg" />
   {{.CSS}}
   <body>
     <section>
