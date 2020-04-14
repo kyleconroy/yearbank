@@ -696,6 +696,18 @@ div.album {
   row-gap: 10px;
 }
 
+@media (min-width: 667px) {
+  div.album {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  div.album {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
 div.album a {
   align-self: center;
 }
