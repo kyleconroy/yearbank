@@ -299,6 +299,7 @@ const section = `<!DOCTYPE html>
 <html lang="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {{.CSS}}
+  <title>{{.Name}} | STHS Yearbook 2006-07</title>
   <body>
     <section>
       <h1><a href="/">STHS Yearbook 2006-07</a></h1>
