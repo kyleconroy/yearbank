@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the main element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on h1 elements within section and
+ * article contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd em font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd em font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent sub and sup elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from fieldset elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    fieldset elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to inherit in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+body {
+  background: rgb(28, 30, 33);
+  color: rgb(228, 230, 235);
+  font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+a, a:visited {
+  color: rgb(228, 230, 235);
+}
+
+section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px;
+}
+
+header {
+  text-align: center;
+}
+
+header img {
+  max-width: 100%;
+}
+
+div.album {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 15px;
+  row-gap: 10px;
+}
+
+div.album a {
+  align-self: center;
+}
+
+div.album a img {
+  max-width: 100%;
+  height: auto;
+}
+
+a.big {
+  font-size: 36px;
+}
+</style>
+  <body>
+    <section>
+      <h1><a href="/">STHS Yearbook 2006-07</a></h1>
+      <h2>Track and Field</h2>
+      <div class="album">
+        
+        <a href="/images/46/3580.JPG">
+          <img src="/images/46/3580.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3581.JPG">
+          <img src="/images/46/3581.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3582.JPG">
+          <img src="/images/46/3582.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3583.JPG">
+          <img src="/images/46/3583.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3584.JPG">
+          <img src="/images/46/3584.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3585.JPG">
+          <img src="/images/46/3585.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3586.JPG">
+          <img src="/images/46/3586.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3587.JPG">
+          <img src="/images/46/3587.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3588.JPG">
+          <img src="/images/46/3588.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3589.JPG">
+          <img src="/images/46/3589.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3590.JPG">
+          <img src="/images/46/3590.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3591.JPG">
+          <img src="/images/46/3591.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3592.JPG">
+          <img src="/images/46/3592.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3593.JPG">
+          <img src="/images/46/3593.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3594.JPG">
+          <img src="/images/46/3594.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3595.JPG">
+          <img src="/images/46/3595.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3596.JPG">
+          <img src="/images/46/3596.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3597.JPG">
+          <img src="/images/46/3597.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3598.JPG">
+          <img src="/images/46/3598.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3599.JPG">
+          <img src="/images/46/3599.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3600.JPG">
+          <img src="/images/46/3600.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3601.JPG">
+          <img src="/images/46/3601.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3602.JPG">
+          <img src="/images/46/3602.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3603.JPG">
+          <img src="/images/46/3603.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3604.JPG">
+          <img src="/images/46/3604.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3605.JPG">
+          <img src="/images/46/3605.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3606.JPG">
+          <img src="/images/46/3606.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3607.JPG">
+          <img src="/images/46/3607.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3608.JPG">
+          <img src="/images/46/3608.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3609.JPG">
+          <img src="/images/46/3609.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3610.JPG">
+          <img src="/images/46/3610.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3611.JPG">
+          <img src="/images/46/3611.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3612.JPG">
+          <img src="/images/46/3612.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3613.JPG">
+          <img src="/images/46/3613.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3614.JPG">
+          <img src="/images/46/3614.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3615.JPG">
+          <img src="/images/46/3615.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3616.JPG">
+          <img src="/images/46/3616.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3617.JPG">
+          <img src="/images/46/3617.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3618.JPG">
+          <img src="/images/46/3618.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3619.JPG">
+          <img src="/images/46/3619.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3620.JPG">
+          <img src="/images/46/3620.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3621.jpg">
+          <img src="/images/46/3621.jpg" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3622.jpg">
+          <img src="/images/46/3622.jpg" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3623.jpg">
+          <img src="/images/46/3623.jpg" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3624.jpg">
+          <img src="/images/46/3624.jpg" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3625.jpg">
+          <img src="/images/46/3625.jpg" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3626.jpg">
+          <img src="/images/46/3626.jpg" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3627.jpg">
+          <img src="/images/46/3627.jpg" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3628.JPG">
+          <img src="/images/46/3628.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3629.JPG">
+          <img src="/images/46/3629.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3630.JPG">
+          <img src="/images/46/3630.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3631.JPG">
+          <img src="/images/46/3631.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3632.JPG">
+          <img src="/images/46/3632.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3633.JPG">
+          <img src="/images/46/3633.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3634.JPG">
+          <img src="/images/46/3634.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3635.JPG">
+          <img src="/images/46/3635.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3636.JPG">
+          <img src="/images/46/3636.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3637.JPG">
+          <img src="/images/46/3637.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3638.JPG">
+          <img src="/images/46/3638.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3639.JPG">
+          <img src="/images/46/3639.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3640.JPG">
+          <img src="/images/46/3640.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3641.JPG">
+          <img src="/images/46/3641.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3642.JPG">
+          <img src="/images/46/3642.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3643.JPG">
+          <img src="/images/46/3643.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3644.JPG">
+          <img src="/images/46/3644.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3645.JPG">
+          <img src="/images/46/3645.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3646.JPG">
+          <img src="/images/46/3646.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3647.JPG">
+          <img src="/images/46/3647.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3648.JPG">
+          <img src="/images/46/3648.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3649.JPG">
+          <img src="/images/46/3649.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3650.JPG">
+          <img src="/images/46/3650.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3651.JPG">
+          <img src="/images/46/3651.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3652.JPG">
+          <img src="/images/46/3652.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3653.JPG">
+          <img src="/images/46/3653.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3654.JPG">
+          <img src="/images/46/3654.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3655.jpg">
+          <img src="/images/46/3655.jpg" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3656.JPG">
+          <img src="/images/46/3656.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3657.JPG">
+          <img src="/images/46/3657.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3658.JPG">
+          <img src="/images/46/3658.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3659.JPG">
+          <img src="/images/46/3659.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3660.JPG">
+          <img src="/images/46/3660.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3661.JPG">
+          <img src="/images/46/3661.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3662.JPG">
+          <img src="/images/46/3662.JPG" loading="lazy" />
+        </a>
+        
+        <a href="/images/46/3663.JPG">
+          <img src="/images/46/3663.JPG" loading="lazy" />
+        </a>
+        
+      </div>
+    </section>
+  </body>
+</html>

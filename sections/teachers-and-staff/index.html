@@ -2,94 +2,129 @@
 <html lang="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
- 
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
- 
+/* Document
+   ========================================================================== */
 
- 
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
 
 html {
-  line-height: 1.15;  
-  -webkit-text-size-adjust: 100%;  
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
- 
+/* Sections
+   ========================================================================== */
 
- 
+/**
+ * Remove the margin in all browsers.
+ */
 
 body {
   margin: 0;
 }
 
- 
+/**
+ * Render the main element consistently in IE.
+ */
 
 main {
   display: block;
 }
 
- 
+/**
+ * Correct the font size and margin on h1 elements within section and
+ * article contexts in Chrome, Firefox, and Safari.
+ */
 
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
- 
+/* Grouping content
+   ========================================================================== */
 
- 
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
 
 hr {
-  box-sizing: content-box;  
-  height: 0;  
-  overflow: visible;  
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
 
- 
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd em font sizing in all browsers.
+ */
 
 pre {
-  font-family: monospace, monospace;  
-  font-size: 1em;  
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
- 
+/* Text-level semantics
+   ========================================================================== */
 
- 
+/**
+ * Remove the gray background on active links in IE 10.
+ */
 
 a {
   background-color: transparent;
 }
 
- 
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
 
 abbr[title] {
-  border-bottom: none;  
-  text-decoration: underline;  
-  text-decoration: underline dotted;  
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
- 
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
 
 b,
 strong {
   font-weight: bolder;
 }
 
- 
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd em font sizing in all browsers.
+ */
 
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;  
-  font-size: 1em;  
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
- 
+/**
+ * Add the correct font size in all browsers.
+ */
 
 small {
   font-size: 80%;
 }
 
- 
+/**
+ * Prevent sub and sup elements from affecting the line height in
+ * all browsers.
+ */
 
 sub,
 sup {
@@ -107,44 +142,59 @@ sup {
   top: -0.5em;
 }
 
- 
+/* Embedded content
+   ========================================================================== */
 
- 
+/**
+ * Remove the border on images inside links in IE 10.
+ */
 
 img {
   border-style: none;
 }
 
- 
+/* Forms
+   ========================================================================== */
 
- 
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
 
 button,
 input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;  
-  font-size: 100%;  
-  line-height: 1.15;  
-  margin: 0;  
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
- 
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
 
 button,
-input {  
+input { /* 1 */
   overflow: visible;
 }
 
- 
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
 
 button,
-select {  
+select { /* 1 */
   text-transform: none;
 }
 
- 
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
 
 button,
 [type="button"],
@@ -153,7 +203,9 @@ button,
   -webkit-appearance: button;
 }
 
- 
+/**
+ * Remove the inner border and padding in Firefox.
+ */
 
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
@@ -163,7 +215,9 @@ button::-moz-focus-inner,
   padding: 0;
 }
 
- 
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
 
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
@@ -172,93 +226,127 @@ button:-moz-focusring,
   outline: 1px dotted ButtonText;
 }
 
- 
+/**
+ * Correct the padding in Firefox.
+ */
 
 fieldset {
   padding: 0.35em 0.75em 0.625em;
 }
 
- 
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from fieldset elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    fieldset elements in all browsers.
+ */
 
 legend {
-  box-sizing: border-box;  
-  color: inherit;  
-  display: table;  
-  max-width: 100%;  
-  padding: 0;  
-  white-space: normal;  
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
 }
 
- 
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
 
 progress {
   vertical-align: baseline;
 }
 
- 
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
 
 textarea {
   overflow: auto;
 }
 
- 
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
 
 [type="checkbox"],
 [type="radio"] {
-  box-sizing: border-box;  
-  padding: 0;  
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
 }
 
- 
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
 
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
- 
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
 
 [type="search"] {
-  -webkit-appearance: textfield;  
-  outline-offset: -2px;  
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
- 
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
 
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
- 
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to inherit in Safari.
+ */
 
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;  
-  font: inherit;  
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
- 
+/* Interactive
+   ========================================================================== */
 
- 
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
 
 details {
   display: block;
 }
 
- 
+/*
+ * Add the correct display in all browsers.
+ */
 
 summary {
   display: list-item;
 }
 
- 
+/* Misc
+   ========================================================================== */
 
- 
+/**
+ * Add the correct display in IE 10+.
+ */
 
 template {
   display: none;
 }
 
- 
+/**
+ * Add the correct display in IE 10.
+ */
 
 [hidden] {
   display: none;
@@ -273,9 +361,22 @@ body {
     "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
+a, a:visited {
+  color: rgb(228, 230, 235);
+}
+
 section {
   max-width: 1200px;
   margin: auto;
+  padding: 10px;
+}
+
+header {
+  text-align: center;
+}
+
+header img {
+  max-width: 100%;
 }
 
 div.album {
@@ -293,7 +394,11 @@ div.album a img {
   max-width: 100%;
   height: auto;
 }
-  </style>
+
+a.big {
+  font-size: 36px;
+}
+</style>
   <body>
     <section>
       <h1><a href="/">STHS Yearbook 2006-07</a></h1>
@@ -301,495 +406,495 @@ div.album a img {
       <div class="album">
         
         <a href="/images/32/1827.JPG">
-          <img src="/images/32/1827.JPG" />
+          <img src="/images/32/1827.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1828.JPG">
-          <img src="/images/32/1828.JPG" />
+          <img src="/images/32/1828.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1829.jpg">
-          <img src="/images/32/1829.jpg" />
+          <img src="/images/32/1829.jpg" loading="lazy" />
         </a>
         
         <a href="/images/32/1830.JPG">
-          <img src="/images/32/1830.JPG" />
+          <img src="/images/32/1830.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1831.jpg">
-          <img src="/images/32/1831.jpg" />
+          <img src="/images/32/1831.jpg" loading="lazy" />
         </a>
         
         <a href="/images/32/1832.jpg">
-          <img src="/images/32/1832.jpg" />
+          <img src="/images/32/1832.jpg" loading="lazy" />
         </a>
         
         <a href="/images/32/1833.JPG">
-          <img src="/images/32/1833.JPG" />
+          <img src="/images/32/1833.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1834.JPG">
-          <img src="/images/32/1834.JPG" />
+          <img src="/images/32/1834.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1835.jpg">
-          <img src="/images/32/1835.jpg" />
+          <img src="/images/32/1835.jpg" loading="lazy" />
         </a>
         
         <a href="/images/32/1836.JPG">
-          <img src="/images/32/1836.JPG" />
+          <img src="/images/32/1836.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1837.JPG">
-          <img src="/images/32/1837.JPG" />
+          <img src="/images/32/1837.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1838.jpg">
-          <img src="/images/32/1838.jpg" />
+          <img src="/images/32/1838.jpg" loading="lazy" />
         </a>
         
         <a href="/images/32/1839.jpg">
-          <img src="/images/32/1839.jpg" />
+          <img src="/images/32/1839.jpg" loading="lazy" />
         </a>
         
         <a href="/images/32/1840.jpg">
-          <img src="/images/32/1840.jpg" />
+          <img src="/images/32/1840.jpg" loading="lazy" />
         </a>
         
         <a href="/images/32/1841.JPG">
-          <img src="/images/32/1841.JPG" />
+          <img src="/images/32/1841.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1842.jpg">
-          <img src="/images/32/1842.jpg" />
+          <img src="/images/32/1842.jpg" loading="lazy" />
         </a>
         
         <a href="/images/32/1843.JPG">
-          <img src="/images/32/1843.JPG" />
+          <img src="/images/32/1843.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1844.JPG">
-          <img src="/images/32/1844.JPG" />
+          <img src="/images/32/1844.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1845.jpg">
-          <img src="/images/32/1845.jpg" />
+          <img src="/images/32/1845.jpg" loading="lazy" />
         </a>
         
         <a href="/images/32/1846.JPG">
-          <img src="/images/32/1846.JPG" />
+          <img src="/images/32/1846.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1847.JPG">
-          <img src="/images/32/1847.JPG" />
+          <img src="/images/32/1847.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1848.jpg">
-          <img src="/images/32/1848.jpg" />
+          <img src="/images/32/1848.jpg" loading="lazy" />
         </a>
         
         <a href="/images/32/1849.JPG">
-          <img src="/images/32/1849.JPG" />
+          <img src="/images/32/1849.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1850.JPG">
-          <img src="/images/32/1850.JPG" />
+          <img src="/images/32/1850.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1851.JPG">
-          <img src="/images/32/1851.JPG" />
+          <img src="/images/32/1851.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1852.jpg">
-          <img src="/images/32/1852.jpg" />
+          <img src="/images/32/1852.jpg" loading="lazy" />
         </a>
         
         <a href="/images/32/1853.JPG">
-          <img src="/images/32/1853.JPG" />
+          <img src="/images/32/1853.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1854.jpg">
-          <img src="/images/32/1854.jpg" />
+          <img src="/images/32/1854.jpg" loading="lazy" />
         </a>
         
         <a href="/images/32/1855.JPG">
-          <img src="/images/32/1855.JPG" />
+          <img src="/images/32/1855.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1856.JPG">
-          <img src="/images/32/1856.JPG" />
+          <img src="/images/32/1856.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1857.JPG">
-          <img src="/images/32/1857.JPG" />
+          <img src="/images/32/1857.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1858.JPG">
-          <img src="/images/32/1858.JPG" />
+          <img src="/images/32/1858.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1859.JPG">
-          <img src="/images/32/1859.JPG" />
+          <img src="/images/32/1859.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1860.JPG">
-          <img src="/images/32/1860.JPG" />
+          <img src="/images/32/1860.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1861.JPG">
-          <img src="/images/32/1861.JPG" />
+          <img src="/images/32/1861.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1862.JPG">
-          <img src="/images/32/1862.JPG" />
+          <img src="/images/32/1862.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1863.jpg">
-          <img src="/images/32/1863.jpg" />
+          <img src="/images/32/1863.jpg" loading="lazy" />
         </a>
         
         <a href="/images/32/1864.JPG">
-          <img src="/images/32/1864.JPG" />
+          <img src="/images/32/1864.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1865.jpg">
-          <img src="/images/32/1865.jpg" />
+          <img src="/images/32/1865.jpg" loading="lazy" />
         </a>
         
         <a href="/images/32/1866.JPG">
-          <img src="/images/32/1866.JPG" />
+          <img src="/images/32/1866.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1867.JPG">
-          <img src="/images/32/1867.JPG" />
+          <img src="/images/32/1867.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1868.JPG">
-          <img src="/images/32/1868.JPG" />
+          <img src="/images/32/1868.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1869.JPG">
-          <img src="/images/32/1869.JPG" />
+          <img src="/images/32/1869.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1870.JPG">
-          <img src="/images/32/1870.JPG" />
+          <img src="/images/32/1870.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1871.JPG">
-          <img src="/images/32/1871.JPG" />
+          <img src="/images/32/1871.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1872.JPG">
-          <img src="/images/32/1872.JPG" />
+          <img src="/images/32/1872.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1873.JPG">
-          <img src="/images/32/1873.JPG" />
+          <img src="/images/32/1873.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1874.JPG">
-          <img src="/images/32/1874.JPG" />
+          <img src="/images/32/1874.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1875.jpg">
-          <img src="/images/32/1875.jpg" />
+          <img src="/images/32/1875.jpg" loading="lazy" />
         </a>
         
         <a href="/images/32/1876.JPG">
-          <img src="/images/32/1876.JPG" />
+          <img src="/images/32/1876.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1877.JPG">
-          <img src="/images/32/1877.JPG" />
+          <img src="/images/32/1877.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1878.JPG">
-          <img src="/images/32/1878.JPG" />
+          <img src="/images/32/1878.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1879.jpg">
-          <img src="/images/32/1879.jpg" />
+          <img src="/images/32/1879.jpg" loading="lazy" />
         </a>
         
         <a href="/images/32/1880.jpg">
-          <img src="/images/32/1880.jpg" />
+          <img src="/images/32/1880.jpg" loading="lazy" />
         </a>
         
         <a href="/images/32/1881.JPG">
-          <img src="/images/32/1881.JPG" />
+          <img src="/images/32/1881.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1882.jpg">
-          <img src="/images/32/1882.jpg" />
+          <img src="/images/32/1882.jpg" loading="lazy" />
         </a>
         
         <a href="/images/32/1883.jpg">
-          <img src="/images/32/1883.jpg" />
+          <img src="/images/32/1883.jpg" loading="lazy" />
         </a>
         
         <a href="/images/32/1884.JPG">
-          <img src="/images/32/1884.JPG" />
+          <img src="/images/32/1884.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1885.JPG">
-          <img src="/images/32/1885.JPG" />
+          <img src="/images/32/1885.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1886.jpg">
-          <img src="/images/32/1886.jpg" />
+          <img src="/images/32/1886.jpg" loading="lazy" />
         </a>
         
         <a href="/images/32/1887.jpg">
-          <img src="/images/32/1887.jpg" />
+          <img src="/images/32/1887.jpg" loading="lazy" />
         </a>
         
         <a href="/images/32/1888.JPG">
-          <img src="/images/32/1888.JPG" />
+          <img src="/images/32/1888.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1889.JPG">
-          <img src="/images/32/1889.JPG" />
+          <img src="/images/32/1889.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1890.jpg">
-          <img src="/images/32/1890.jpg" />
+          <img src="/images/32/1890.jpg" loading="lazy" />
         </a>
         
         <a href="/images/32/1891.jpg">
-          <img src="/images/32/1891.jpg" />
+          <img src="/images/32/1891.jpg" loading="lazy" />
         </a>
         
         <a href="/images/32/1892.jpg">
-          <img src="/images/32/1892.jpg" />
+          <img src="/images/32/1892.jpg" loading="lazy" />
         </a>
         
         <a href="/images/32/1893.JPG">
-          <img src="/images/32/1893.JPG" />
+          <img src="/images/32/1893.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1894.JPG">
-          <img src="/images/32/1894.JPG" />
+          <img src="/images/32/1894.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1895.jpg">
-          <img src="/images/32/1895.jpg" />
+          <img src="/images/32/1895.jpg" loading="lazy" />
         </a>
         
         <a href="/images/32/1896.JPG">
-          <img src="/images/32/1896.JPG" />
+          <img src="/images/32/1896.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1897.jpg">
-          <img src="/images/32/1897.jpg" />
+          <img src="/images/32/1897.jpg" loading="lazy" />
         </a>
         
         <a href="/images/32/1898.JPG">
-          <img src="/images/32/1898.JPG" />
+          <img src="/images/32/1898.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1899.JPG">
-          <img src="/images/32/1899.JPG" />
+          <img src="/images/32/1899.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1900.jpg">
-          <img src="/images/32/1900.jpg" />
+          <img src="/images/32/1900.jpg" loading="lazy" />
         </a>
         
         <a href="/images/32/1901.JPG">
-          <img src="/images/32/1901.JPG" />
+          <img src="/images/32/1901.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1902.JPG">
-          <img src="/images/32/1902.JPG" />
+          <img src="/images/32/1902.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1903.jpg">
-          <img src="/images/32/1903.jpg" />
+          <img src="/images/32/1903.jpg" loading="lazy" />
         </a>
         
         <a href="/images/32/1904.JPG">
-          <img src="/images/32/1904.JPG" />
+          <img src="/images/32/1904.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1905.JPG">
-          <img src="/images/32/1905.JPG" />
+          <img src="/images/32/1905.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1906.JPG">
-          <img src="/images/32/1906.JPG" />
+          <img src="/images/32/1906.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1907.JPG">
-          <img src="/images/32/1907.JPG" />
+          <img src="/images/32/1907.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1908.jpg">
-          <img src="/images/32/1908.jpg" />
+          <img src="/images/32/1908.jpg" loading="lazy" />
         </a>
         
         <a href="/images/32/1909.jpg">
-          <img src="/images/32/1909.jpg" />
+          <img src="/images/32/1909.jpg" loading="lazy" />
         </a>
         
         <a href="/images/32/1910.JPG">
-          <img src="/images/32/1910.JPG" />
+          <img src="/images/32/1910.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1911.JPG">
-          <img src="/images/32/1911.JPG" />
+          <img src="/images/32/1911.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1912.jpg">
-          <img src="/images/32/1912.jpg" />
+          <img src="/images/32/1912.jpg" loading="lazy" />
         </a>
         
         <a href="/images/32/1913.JPG">
-          <img src="/images/32/1913.JPG" />
+          <img src="/images/32/1913.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1914.jpg">
-          <img src="/images/32/1914.jpg" />
+          <img src="/images/32/1914.jpg" loading="lazy" />
         </a>
         
         <a href="/images/32/1915.jpg">
-          <img src="/images/32/1915.jpg" />
+          <img src="/images/32/1915.jpg" loading="lazy" />
         </a>
         
         <a href="/images/32/1916.JPG">
-          <img src="/images/32/1916.JPG" />
+          <img src="/images/32/1916.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1917.jpg">
-          <img src="/images/32/1917.jpg" />
+          <img src="/images/32/1917.jpg" loading="lazy" />
         </a>
         
         <a href="/images/32/1918.JPG">
-          <img src="/images/32/1918.JPG" />
+          <img src="/images/32/1918.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1919.JPG">
-          <img src="/images/32/1919.JPG" />
+          <img src="/images/32/1919.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1920.JPG">
-          <img src="/images/32/1920.JPG" />
+          <img src="/images/32/1920.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1921.JPG">
-          <img src="/images/32/1921.JPG" />
+          <img src="/images/32/1921.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1922.JPG">
-          <img src="/images/32/1922.JPG" />
+          <img src="/images/32/1922.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1923.JPG">
-          <img src="/images/32/1923.JPG" />
+          <img src="/images/32/1923.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1924.JPG">
-          <img src="/images/32/1924.JPG" />
+          <img src="/images/32/1924.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1925.jpg">
-          <img src="/images/32/1925.jpg" />
+          <img src="/images/32/1925.jpg" loading="lazy" />
         </a>
         
         <a href="/images/32/1926.JPG">
-          <img src="/images/32/1926.JPG" />
+          <img src="/images/32/1926.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1927.JPG">
-          <img src="/images/32/1927.JPG" />
+          <img src="/images/32/1927.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1928.jpg">
-          <img src="/images/32/1928.jpg" />
+          <img src="/images/32/1928.jpg" loading="lazy" />
         </a>
         
         <a href="/images/32/1929.JPG">
-          <img src="/images/32/1929.JPG" />
+          <img src="/images/32/1929.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1930.JPG">
-          <img src="/images/32/1930.JPG" />
+          <img src="/images/32/1930.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1931.JPG">
-          <img src="/images/32/1931.JPG" />
+          <img src="/images/32/1931.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1932.JPG">
-          <img src="/images/32/1932.JPG" />
+          <img src="/images/32/1932.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1933.JPG">
-          <img src="/images/32/1933.JPG" />
+          <img src="/images/32/1933.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1934.JPG">
-          <img src="/images/32/1934.JPG" />
+          <img src="/images/32/1934.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1935.JPG">
-          <img src="/images/32/1935.JPG" />
+          <img src="/images/32/1935.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1936.JPG">
-          <img src="/images/32/1936.JPG" />
+          <img src="/images/32/1936.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1937.JPG">
-          <img src="/images/32/1937.JPG" />
+          <img src="/images/32/1937.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1938.JPG">
-          <img src="/images/32/1938.JPG" />
+          <img src="/images/32/1938.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1939.JPG">
-          <img src="/images/32/1939.JPG" />
+          <img src="/images/32/1939.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1940.JPG">
-          <img src="/images/32/1940.JPG" />
+          <img src="/images/32/1940.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1941.jpg">
-          <img src="/images/32/1941.jpg" />
+          <img src="/images/32/1941.jpg" loading="lazy" />
         </a>
         
         <a href="/images/32/1942.JPG">
-          <img src="/images/32/1942.JPG" />
+          <img src="/images/32/1942.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1943.JPG">
-          <img src="/images/32/1943.JPG" />
+          <img src="/images/32/1943.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1944.JPG">
-          <img src="/images/32/1944.JPG" />
+          <img src="/images/32/1944.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1945.jpg">
-          <img src="/images/32/1945.jpg" />
+          <img src="/images/32/1945.jpg" loading="lazy" />
         </a>
         
         <a href="/images/32/1946.JPG">
-          <img src="/images/32/1946.JPG" />
+          <img src="/images/32/1946.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1947.JPG">
-          <img src="/images/32/1947.JPG" />
+          <img src="/images/32/1947.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1948.JPG">
-          <img src="/images/32/1948.JPG" />
+          <img src="/images/32/1948.JPG" loading="lazy" />
         </a>
         
         <a href="/images/32/1949.JPG">
-          <img src="/images/32/1949.JPG" />
+          <img src="/images/32/1949.JPG" loading="lazy" />
         </a>
         
       </div>

@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the main element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on h1 elements within section and
+ * article contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd em font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd em font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent sub and sup elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from fieldset elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    fieldset elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to inherit in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+body {
+  background: rgb(28, 30, 33);
+  color: rgb(228, 230, 235);
+  font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+a, a:visited {
+  color: rgb(228, 230, 235);
+}
+
+section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px;
+}
+
+header {
+  text-align: center;
+}
+
+header img {
+  max-width: 100%;
+}
+
+div.album {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 15px;
+  row-gap: 10px;
+}
+
+div.album a {
+  align-self: center;
+}
+
+div.album a img {
+  max-width: 100%;
+  height: auto;
+}
+
+a.big {
+  font-size: 36px;
+}
+</style>
+  <body>
+    <section>
+      <header>
+        <img src="/images/home.jpg" alt="STHS Yearbook 2006-07" />
+      </header>
+      <h2>Portraits</h2>
+      <div class="album">
+	    
+        <div>
+          <h3><a class="big" href="/sections/class-of-07">Class of &#39;07</a></h3>
+        </div>
+		
+        <div>
+          <h3><a class="big" href="/sections/class-of-08">Class of &#39;08</a></h3>
+        </div>
+		
+        <div>
+          <h3><a class="big" href="/sections/class-of-09">Class of &#39;09</a></h3>
+        </div>
+		
+        <div>
+          <h3><a class="big" href="/sections/class-of-10">Class of &#39;10</a></h3>
+        </div>
+		
+      </div>
+      <h2>Sports</h2>
+      <div class="album">
+	    
+        <div>
+          <h3><a href="/sections/cross-country">Cross Country</a></h3>
+          <a href="/sections/cross-country">
+            <img src="/images/49/4069.JPG" loading="lazy" />
+          </a>
+        </div>
+		
+        <div>
+          <h3><a href="/sections/dance-team">Dance Team</a></h3>
+          <a href="/sections/dance-team">
+            <img src="/images/36/2425.jpg" loading="lazy" />
+          </a>
+        </div>
+		
+        <div>
+          <h3><a href="/sections/football">Football</a></h3>
+          <a href="/sections/football">
+            <img src="/images/37/2506.JPG" loading="lazy" />
+          </a>
+        </div>
+		
+        <div>
+          <h3><a href="/sections/golf">Golf</a></h3>
+          <a href="/sections/golf">
+            <img src="/images/38/2822.jpg" loading="lazy" />
+          </a>
+        </div>
+		
+        <div>
+          <h3><a href="/sections/nordic-skiing">Nordic Skiing</a></h3>
+          <a href="/sections/nordic-skiing">
+            <img src="/images/41/2866.jpg" loading="lazy" />
+          </a>
+        </div>
+		
+        <div>
+          <h3><a href="/sections/rotc">ROTC</a></h3>
+          <a href="/sections/rotc">
+            <img src="/images/39/2827.JPG" loading="lazy" />
+          </a>
+        </div>
+		
+        <div>
+          <h3><a href="/sections/ski-team">Ski Team</a></h3>
+          <a href="/sections/ski-team">
+            <img src="/images/40/2849.jpg" loading="lazy" />
+          </a>
+        </div>
+		
+        <div>
+          <h3><a href="/sections/soccer">Soccer</a></h3>
+          <a href="/sections/soccer">
+            <img src="/images/42/3015.JPG" loading="lazy" />
+          </a>
+        </div>
+		
+        <div>
+          <h3><a href="/sections/softball">Softball</a></h3>
+          <a href="/sections/softball">
+            <img src="/images/43/3271.jpg" loading="lazy" />
+          </a>
+        </div>
+		
+        <div>
+          <h3><a href="/sections/swimming">Swimming</a></h3>
+          <a href="/sections/swimming">
+            <img src="/images/44/3328.JPG" loading="lazy" />
+          </a>
+        </div>
+		
+        <div>
+          <h3><a href="/sections/tennis">Tennis</a></h3>
+          <a href="/sections/tennis">
+            <img src="/images/45/3489.JPG" loading="lazy" />
+          </a>
+        </div>
+		
+        <div>
+          <h3><a href="/sections/track-and-field">Track and Field</a></h3>
+          <a href="/sections/track-and-field">
+            <img src="/images/46/3640.JPG" loading="lazy" />
+          </a>
+        </div>
+		
+        <div>
+          <h3><a href="/sections/volleyball">Volleyball</a></h3>
+          <a href="/sections/volleyball">
+            <img src="/images/47/3827.jpg" loading="lazy" />
+          </a>
+        </div>
+		
+        <div>
+          <h3><a href="/sections/wrestling">Wrestling</a></h3>
+          <a href="/sections/wrestling">
+            <img src="/images/48/3918.JPG" loading="lazy" />
+          </a>
+        </div>
+		
+      </div>
+      <h2>Clubs</h2>
+      <div class="album">
+	    
+        <div>
+          <h3><a href="/sections/ally">Ally</a></h3>
+          <a href="/sections/ally">
+            <img src="/images/12/672.JPG" loading="lazy" />
+          </a>
+        </div>
+		
+        <div>
+          <h3><a href="/sections/band">Band</a></h3>
+          <a href="/sections/band">
+            <img src="/images/51/4183.JPG" loading="lazy" />
+          </a>
+        </div>
+		
+        <div>
+          <h3><a href="/sections/book-club">Book Club</a></h3>
+          <a href="/sections/book-club">
+            <img src="/images/11/611.JPG" loading="lazy" />
+          </a>
+        </div>
+		
+        <div>
+          <h3><a href="/sections/choir">Choir</a></h3>
+          <a href="/sections/choir">
+            <img src="/images/50/4114.jpg" loading="lazy" />
+          </a>
+        </div>
+		
+        <div>
+          <h3><a href="/sections/cooking">Cooking</a></h3>
+          <a href="/sections/cooking">
+            <img src="/images/14/805.JPG" loading="lazy" />
+          </a>
+        </div>
+		
+        <div>
+          <h3><a href="/sections/digital-music">Digital Music</a></h3>
+          <a href="/sections/digital-music">
+            <img src="/images/18/1245.JPG" loading="lazy" />
+          </a>
+        </div>
+		
+        <div>
+          <h3><a href="/sections/french">French</a></h3>
+          <a href="/sections/french">
+            <img src="/images/28/1526.JPG" loading="lazy" />
+          </a>
+        </div>
+		
+        <div>
+          <h3><a href="/sections/key-club">Key Club</a></h3>
+          <a href="/sections/key-club">
+            <img src="/images/24/1374.JPG" loading="lazy" />
+          </a>
+        </div>
+		
+        <div>
+          <h3><a href="/sections/kids">Kids</a></h3>
+          <a href="/sections/kids">
+            <img src="/images/30/1555.JPG" loading="lazy" />
+          </a>
+        </div>
+		
+        <div>
+          <h3><a href="/sections/model-un">Model U.N.</a></h3>
+          <a href="/sections/model-un">
+            <img src="/images/22/1298.jpg" loading="lazy" />
+          </a>
+        </div>
+		
+        <div>
+          <h3><a href="/sections/national-honor-society">National Honor Society</a></h3>
+          <a href="/sections/national-honor-society">
+            <img src="/images/25/1449.JPG" loading="lazy" />
+          </a>
+        </div>
+		
+        <div>
+          <h3><a href="/sections/ryla">RYLA</a></h3>
+          <a href="/sections/ryla">
+            <img src="/images/20/1280.JPG" loading="lazy" />
+          </a>
+        </div>
+		
+        <div>
+          <h3><a href="/sections/rotary-youth-exchange">Rotary Youth Exchange</a></h3>
+          <a href="/sections/rotary-youth-exchange">
+            <img src="/images/19/1264.JPG" loading="lazy" />
+          </a>
+        </div>
+		
+        <div>
+          <h3><a href="/sections/smile">S.M.I.L.E</a></h3>
+          <a href="/sections/smile">
+            <img src="/images/27/1496.JPG" loading="lazy" />
+          </a>
+        </div>
+		
+        <div>
+          <h3><a href="/sections/teachers-and-staff">Teachers and Staff</a></h3>
+          <a href="/sections/teachers-and-staff">
+            <img src="/images/32/1827.JPG" loading="lazy" />
+          </a>
+        </div>
+		
+        <div>
+          <h3><a href="/sections/theater">Theater</a></h3>
+          <a href="/sections/theater">
+            <img src="/images/16/892.jpg" loading="lazy" />
+          </a>
+        </div>
+		
+        <div>
+          <h3><a href="/sections/vegan">Vegan</a></h3>
+          <a href="/sections/vegan">
+            <img src="/images/29/1541.JPG" loading="lazy" />
+          </a>
+        </div>
+		
+        <div>
+          <h3><a href="/sections/yearbook">Yearbook</a></h3>
+          <a href="/sections/yearbook">
+            <img src="/images/23/1310.JPG" loading="lazy" />
+          </a>
+        </div>
+		
+      </div>
+      <h2>Events</h2>
+      <div class="album">
+	    
+        <div>
+          <h3><a href="/sections/air-band">Air Band</a></h3>
+          <a href="/sections/air-band">
+            <img src="/images/9/479.JPG" loading="lazy" />
+          </a>
+        </div>
+		
+        <div>
+          <h3><a href="/sections/around-campus">Around Campus</a></h3>
+          <a href="/sections/around-campus">
+            <img src="/images/13/707.JPG" loading="lazy" />
+          </a>
+        </div>
+		
+        <div>
+          <h3><a href="/sections/art">Art</a></h3>
+          <a href="/sections/art">
+            <img src="/images/8/460.jpg" loading="lazy" />
+          </a>
+        </div>
+		
+        <div>
+          <h3><a href="/sections/building-the-zen-garden">Building the Zen Garden</a></h3>
+          <a href="/sections/building-the-zen-garden">
+            <img src="/images/3/94.jpg" loading="lazy" />
+          </a>
+        </div>
+		
+        <div>
+          <h3><a href="/sections/cool">Cool</a></h3>
+          <a href="/sections/cool">
+            <img src="/images/15/807.jpg" loading="lazy" />
+          </a>
+        </div>
+		
+        <div>
+          <h3><a href="/sections/costumes">Costumes</a></h3>
+          <a href="/sections/costumes">
+            <img src="/images/4/118.JPG" loading="lazy" />
+          </a>
+        </div>
+		
+        <div>
+          <h3><a href="/sections/eating-contest">Eating Contest</a></h3>
+          <a href="/sections/eating-contest">
+            <img src="/images/10/606.JPG" loading="lazy" />
+          </a>
+        </div>
+		
+        <div>
+          <h3><a href="/sections/homecoming">Homecoming</a></h3>
+          <a href="/sections/homecoming">
+            <img src="/images/5/157.JPG" loading="lazy" />
+          </a>
+        </div>
+		
+        <div>
+          <h3><a href="/sections/recycling">Recycling</a></h3>
+          <a href="/sections/recycling">
+            <img src="/images/17/1240.jpg" loading="lazy" />
+          </a>
+        </div>
+		
+        <div>
+          <h3><a href="/sections/spirit-week">Spirit Week</a></h3>
+          <a href="/sections/spirit-week">
+            <img src="/images/1/7.JPG" loading="lazy" />
+          </a>
+        </div>
+		
+        <div>
+          <h3><a href="/sections/style">Style</a></h3>
+          <a href="/sections/style">
+            <img src="/images/2/66.JPG" loading="lazy" />
+          </a>
+        </div>
+		
+        <div>
+          <h3><a href="/sections/us-history">U.S. History</a></h3>
+          <a href="/sections/us-history">
+            <img src="/images/6/388.jpg" loading="lazy" />
+          </a>
+        </div>
+		
+        <div>
+          <h3><a href="/sections/unknown-a">Unknown: A</a></h3>
+          <a href="/sections/unknown-a">
+            <img src="/images/21/1291.jpg" loading="lazy" />
+          </a>
+        </div>
+		
+        <div>
+          <h3><a href="/sections/unknown-b">Unknown: B</a></h3>
+          <a href="/sections/unknown-b">
+            <img src="/images/26/1468.jpg" loading="lazy" />
+          </a>
+        </div>
+		
+      </div>
+    </section>
+  </body>
+</html>
